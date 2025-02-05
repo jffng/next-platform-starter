@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,11 +18,15 @@
 }
 
 a {
-    @apply underline
+    @apply text-blue-700 hover:underline;
+}
+
+p {
+    @apply font-light text-sm;
 }
 
 .markdown {
-    @apply mb-1;
+    @apply mb-1 text-justify;
 }
 
 .alert .markdown {
