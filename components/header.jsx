@@ -12,7 +12,7 @@ export function Header() {
     return (
         <nav className="flex flex-wrap items-center gap-4 pt-6 pb-12 sm:pt-12 md:pb-24">
             {navItems.map(({ linkText, href }) => (
-                <Link href={href}>{linkText}</Link>
+                <Link key={href} href={href}>{linkText}</Link>
             ))}
 
         </nav>
