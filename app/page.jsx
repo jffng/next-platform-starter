@@ -4,7 +4,7 @@ import { getNetlifyContext } from 'utils';
 import Game from 'components/gameoflife';
 
 const postDynamicContentExplainer = `
-I'm an American technologist working with new media, primarily building with technologies for the web. I love ideas with a particular bent towards critical theory. In my practice, I'm neither a cynic nor optimist, but biased towards prototyping and experimentation. My preference is to work in cross-functional groups with individuals of open mind and clear purpose. 
+I'm an American technologist working with new media, primarily building with technologies for the web. I love ideas with a particular bent towards critical theory. In practice, I'm neither a cynic nor optimist, but biased towards prototyping and experimentation. My preference is to work in cross-functional groups with individuals of open mind and clear purpose. 
 
 Open to collaborations and conversations, please get in touch by [email at jonger4 at gmail.com](mailto:jonger4@gmail.com).
 
