@@ -18,7 +18,11 @@
 }
 
 a {
-    @apply text-blue-700 hover:underline;
+    @apply text-blue-800 hover:underline;
+}
+
+nav a {
+    @apply text-blue-500;
 }
 
 p {
@@ -39,4 +43,8 @@ p {
 
 .btn:disabled {
     @apply text-neutral-400 bg-neutral-700;
+}
+
+canvas {
+    cursor: crosshair;
 }

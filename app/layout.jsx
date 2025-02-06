@@ -5,7 +5,7 @@ import { Header } from '../components/header';
 export const metadata = {
     title: {
         template: '%s | Netlify',
-        default: 'jffng.com'
+        default: 'jeff ong — work in progress'
     }
 };
 

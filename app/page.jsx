@@ -1,17 +1,20 @@
 import { Card } from 'components/card';
 import { Markdown } from 'components/markdown';
 import { getNetlifyContext } from 'utils';
+import Game from 'components/gameoflife';
 
 const postDynamicContentExplainer = `
-I am an American technologist working with new media, primarily building tools for the open Internet. I love ideas, with a particular interest in critical theory. In my technology practice, I'm neither a cynic nor optimist, but biased towards prototyping and experimentation. My preference is to work in cross-functional groups with individuals of open mind and clear purpose. Open to collaborations and conversations, please get in touch by [email at jonger4 at gmail.com](mailto:jonger4@gmail.com).
+I'm an American technologist working with new media, primarily building with technologies for the web. I love ideas with a particular bent towards critical theory. In my practice, I'm neither a cynic nor optimist, but biased towards prototyping and experimentation. My preference is to work in cross-functional groups with individuals of open mind and clear purpose. 
 
-WORK — I develop custom websites & apps, digital apps, and installations, both as an independent professional and as a part of multidisciplinary design, product, & research teams. My recent work was focused on open source software contributions to [WordPress](http://wordpress.org) in the form of [themes](https://github.com/Automattic/themes/commits?author=jffng), [plugins](https://github.com/WordPress/create-block-theme), and the content editor, [Gutenberg](https://github.com/WordPress/gutenberg/commits?author=jffng).
+Open to collaborations and conversations, please get in touch by [email at jonger4 at gmail.com](mailto:jonger4@gmail.com).
 
-EMPLOYMENT — I've worked for [Automattic](https://automattic.com/) (2019 - 2024), [frog design](https://www.frog.co/) (2015 - 2018), [barbarian](https://www.wearebarbarian.com/) (2012 - 2014). My titles included design director, creative technologist, design technologist, and software engineer.
+WORK — I develop [websites](https://asif.org), [apps](https://skematic.com), and [installations](https://docubase.mit.edu/project/subway-stories/), both as an independent professional and as a part of multidisciplinary design, product, & research teams. My recent work was focused on open source software contributions to [WordPress](http://wordpress.org) in the form of [themes](https://github.com/Automattic/themes/commits?author=jffng), [plugins](https://github.com/WordPress/create-block-theme), and the content editor, [Gutenberg](https://github.com/WordPress/gutenberg/commits?author=jffng). A selection of work can be found [here](https://nostalgic-ramanujan-e41182.netlify.app/work/)
+
+EMPLOYMENT — I've worked for [Automattic](https://automattic.com/) (2019 - 2024), [frog design](https://www.frog.co/) (2015 - 2018), [barbarian](https://www.wearebarbarian.com/) (2012 - 2014). My titles included software engineer, design director, [creative technologist](https://automattic.design/2019/06/21/what-is-a-creative-technologist/), and design technologist.
 
 PRACTICE — I make music and perform under the moniker [Off-Brand](https://off-brand.net/about). I'm a resident of [the Lot Radio](https://www.thelotradio.com/), co-hosting a monthly show [SLUICE](https://www.youtube.com/results?search_query=SLUICE+lot+radio) with [Laenz](https://soundcloud.com/laenzzz). My most recent [sound performance collaboration](https://www.instagram.com/p/DC1scd8PtxE/?img_index=1) with [CACHE Collective](https://thisiscache.com/).
 
-My [media artwork](https://jffng.github.io/subway-stories-web/) has been exhibited at [SIGGRAPH](https://dl.acm.org/doi/10.1145/2601080.2601086), [CURRENTS Festival](https://currentsnewmedia.org/), [NYC Resistor](https://hackaday.com/2014/06/13/nyc-resistor-interactive-show-2014/), and the [Dumbo Arts Festival](https://www.thesubwaydiaries.com/blog/dumbo-arts-festival-more-underground-magic/). My master’s thesis (2015) looked at the commercial use of artificial intelligence in mediating personal identity. I spoke about the automation of design at the St. Etienne Design Biennale (2019).
+My [media artwork](https://jffng.github.io/subway-stories-web/) has been exhibited at [SIGGRAPH](https://dl.acm.org/doi/10.1145/2601080.2601086), [CURRENTS Festival](https://currentsnewmedia.org/), [NYC Resistor](https://hackaday.com/2014/06/13/nyc-resistor-interactive-show-2014/), and the [Dumbo Arts Festival](https://www.thesubwaydiaries.com/blog/dumbo-arts-festival-more-underground-magic/). My master’s thesis, [The Medium is the Machine](https://vimeo.com/manage/videos/128042517)  (2015) looked at the commercial use of artificial intelligence in mediating personal identity. I [spoke about the automation of design](https://www.youtube.com/live/wMpXHOWVOwg?si=m2qlKofghmJGukYb&t=2653) at the St. Etienne Design Biennale (2019).
 
 BACKGROUND — I was born and raised in [Michigan](https://en.wikipedia.org/wiki/St._Joseph,_Michigan) (1990 - 2012), and currently live in [New York City](https://en.wikipedia.org/wiki/Ridgewood,_Queens) (2012 - present). I graduated from the [University of Michigan](https://michiganross.umich.edu/) (2008) and [New York University](https://tisch.nyu.edu/itp) (2015) with degrees in business and computers, respectively. I am the third child of two immigrants from Hong Kong and Malaysia to the United States.
 
@@ -25,6 +28,7 @@ export default function Page() {
     return (
         <main className="flex flex-col gap-36 sm:gap-4">
             <section className="flex flex-col gap-6">
+                <Game/>
                 <Markdown content={postDynamicContentExplainer} />
             </section>
             {/* { !!cards?.length && <CardsGrid cards={cards} /> } */}
