@@ -15,6 +15,9 @@ export default function RootLayout({ children }) {
         <html lang="en" data-theme="lofi">
             <head>
                 <link rel="icon" href="/favicon.png" sizes="any" />
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+                <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap" rel="stylesheet" />
             </head>
             <body className="antialiased text-black">
                 <div className="flex flex-col min-h-screen px-4 bg-grid-pattern sm:px-10">

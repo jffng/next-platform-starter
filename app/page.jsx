@@ -1,6 +1,4 @@
-import { Card } from 'components/card';
 import { Markdown } from 'components/markdown';
-import { getNetlifyContext } from 'utils';
 import Game from 'components/gameoflife';
 
 const postDynamicContentExplainer = `
@@ -22,8 +20,6 @@ OTHER — I enjoy books, movies, writing, amaro, and cooking. I’m currently s
 
 I would love to hear from you, please get in touch by [email at jonger4 at gmail.com](mailto:jonger4@gmail.com).`
 
-const ctx = getNetlifyContext();
-
 export default function Page() {
     return (
         <main className="flex flex-col gap-36 sm:gap-4">
@@ -31,16 +27,6 @@ export default function Page() {
                 <Game/>
                 <Markdown content={postDynamicContentExplainer} />
             </section>
-            {/* { !!cards?.length && <CardsGrid cards={cards} /> } */}
         </main>
     );
-}
-
-function RuntimeContextCard() {
-    const title = `Netlify Context: running in ${ctx} mode.`;
-    if (ctx === 'dev') {
-        return <Card title={title} text="Next.js will rebuild any page you navigate to, including static pages." />;
-    } else {
-        return <Card title={title} text="This page was statically-generated at build time." />;
-    }
 }
