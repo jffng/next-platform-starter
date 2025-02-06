@@ -1,18 +1,20 @@
-import Image from 'next/image';
 import Link from 'next/link';
-import githubLogo from 'public/images/github-mark-white.svg';
 
 const navItems = [
-    { linkText: 'Home', href: '/' },
-    { linkText: 'Revalidation', href: '/revalidation' },
-    { linkText: 'Image CDN', href: '/image-cdn' },
-    { linkText: 'Edge Function', href: '/edge' },
-    { linkText: 'Blobs', href: '/blobs' },
-    { linkText: 'Classics', href: '/classics' }
+    { linkText: 'CV', href: 'https://docs.google.com/spreadsheets/d/1LtpUlSQJaYhO-Umu28o_GDXFsX0KhAvBiCGuZWp_rgk/edit?gid=0#gid=0' },
+    { linkText: 'Portfolio', href: 'https://nostalgic-ramanujan-e41182.netlify.app/work/' },
+    { linkText: 'Github', href: 'https://github.com/jffng' },
+    { linkText: 'Instagram', href: 'https://instagram.com/ongbrand' },
+    { linkText: 'LinkedIn', href: 'https://www.linkedin.com/in/ongjeffrey/' }
 ];
 
 export function Header() {
     return (
-        <nav className="flex flex-wrap items-center gap-4 pt-6 pb-12 sm:pt-12 md:pb-24"></nav>
+        <nav className="flex flex-wrap items-center gap-4 pt-6 pb-12 sm:pt-12 md:pb-24">
+            {navItems.map(({ linkText, href }) => (
+                <Link href={href}>{linkText}</Link>
+            ))}
+
+        </nav>
     );
 }
