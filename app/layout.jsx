@@ -6,7 +6,8 @@ export const metadata = {
     title: {
         template: '%s | Netlify',
         default: 'jeff ong — work in progress'
-    }
+    },
+    description: 'portfolio website of interactive web developer designer artist jeff ong based in new york city'
 };
 
 export default function RootLayout({ children }) {
