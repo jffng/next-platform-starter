@@ -12,11 +12,13 @@ export function Footer() {
 
     return (
         <footer className="pt-16 pb-12 sm:pt-24 sm:pb-16">
-			<p className="text-xs">
-            Code for this website can be found in this repository <Link href="https://github.com/jffng/next-platform-starter">this repository</Link>.
+			<p className="text-xs"><em>
             This website was last updated {lastModified}. 
+            </em>
             </p>
-            <br/>
+			<p className="text-xs">
+            Code for this website can be found in <Link href="https://github.com/jffng/next-platform-starter">this repository</Link>.
+            </p>
             <p className="text-xs">
             Credit to <Link href="https://mindyseu.com">Mindy Seu</Link> for the format of this statement.
             </p>

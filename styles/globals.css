@@ -14,15 +14,17 @@
 }
 
 a {
-    @apply text-blue-800 hover:underline;
-}
-
-nav a {
-    @apply text-blue-500;
+    @apply text-blue-600 hover:underline;
 }
 
 p {
-    @apply font-light text-sm;
+    @apply text-sm font-light;
+}
+
+strong,
+strong a {
+    font-weight: 700;
+    /* @apply bg-lime-100; */
 }
 
 .markdown {
